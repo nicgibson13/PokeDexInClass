@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokeDexInClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UF7-Km-CYV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m3h-JU-NNT" userLabel="Pokemon">
+                                <rect key="frame" x="107" y="230" width="200" height="200"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-wc-ZOA">
+                                <rect key="frame" x="107" y="440" width="200" height="77.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKS-eD-Qco">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRL-pe-yiZ">
+                                        <rect key="frame" x="0.0" y="28.5" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdY-yx-Eka">
+                                        <rect key="frame" x="0.0" y="57" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XgC-N1-TvX" userLabel="Background">
+                                <rect key="frame" x="107" y="230" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mQH-8K-pdD"/>
+                                    <constraint firstAttribute="width" constant="200" id="mq0-Pz-ZF6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UF7-Km-CYV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4PH-qq-HLt"/>
+                            <constraint firstItem="XgC-N1-TvX" firstAttribute="top" secondItem="UF7-Km-CYV" secondAttribute="bottom" constant="130" id="8DW-Nc-S1w"/>
+                            <constraint firstItem="vvf-wc-ZOA" firstAttribute="trailing" secondItem="XgC-N1-TvX" secondAttribute="trailing" id="8l3-CE-3jH"/>
+                            <constraint firstItem="XgC-N1-TvX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DX1-0v-yEc"/>
+                            <constraint firstItem="m3h-JU-NNT" firstAttribute="width" secondItem="XgC-N1-TvX" secondAttribute="width" id="ETk-c4-woa"/>
+                            <constraint firstItem="m3h-JU-NNT" firstAttribute="centerX" secondItem="XgC-N1-TvX" secondAttribute="centerX" id="QEM-FX-DFE"/>
+                            <constraint firstItem="vvf-wc-ZOA" firstAttribute="width" secondItem="XgC-N1-TvX" secondAttribute="width" id="Tjk-tR-FhX"/>
+                            <constraint firstItem="m3h-JU-NNT" firstAttribute="centerY" secondItem="XgC-N1-TvX" secondAttribute="centerY" id="VdB-e3-X5G"/>
+                            <constraint firstItem="vvf-wc-ZOA" firstAttribute="top" secondItem="XgC-N1-TvX" secondAttribute="bottom" constant="10" id="cQu-8f-c0O"/>
+                            <constraint firstItem="m3h-JU-NNT" firstAttribute="height" secondItem="XgC-N1-TvX" secondAttribute="height" id="l2d-E5-GwT"/>
+                            <constraint firstItem="UF7-Km-CYV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lgg-kj-y9a"/>
+                            <constraint firstItem="UF7-Km-CYV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vj4-bo-8ie"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="800" height="480"/>
+    </resources>
+</document>
